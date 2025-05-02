@@ -1,30 +1,26 @@
 
 # Telegram Bot: Консультації
 
-## Як запустити
+## Запуск локально
 
-1. Встанови Node.js (якщо ще не встановлено)
-   ```
-   brew install node
-   ```
-
-2. Відкрий термінал і створи папку
-   ```
-   mkdir telegram-bot && cd telegram-bot
-   ```
-
-3. Скопіюй сюди файли `index.js`, `package.json`
-
-4. Встанови залежності
+1. Встановити залежності:
    ```
    npm install
    ```
 
-5. Запусти бота
+2. Запустити бота:
    ```
    npm start
    ```
 
-6. Напиши команду `/start` у свого бота в Telegram
+## Розгортання на Render
 
-Адміністратор з username `prudnykov_lawyer` має доступ до команди `/adminpanel`.
+1. Зайти на https://render.com
+2. Створити новий Web Service:
+   - **Build Command:** `npm install`
+   - **Start Command:** `npm start`
+   - **Environment:** Node
+   - **Environment Variables:**
+     - `BOT_TOKEN=тут_твій_токен`
+
+3. Очікувати запуск. Готово!
