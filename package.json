@@ -1,0 +1,13 @@
+
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram бот для консультацій з можливістю відповіді адміну",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.12.2"
+  }
+}
